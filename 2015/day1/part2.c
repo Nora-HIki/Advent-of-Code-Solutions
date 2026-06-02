@@ -6,7 +6,10 @@ int main(){
   FILE *pfile = fopen("input.txt","r");
 
 
-  char buffer[1000];
+  fseek(pfile,0,SEEK_END);
+  int size=ftell(pfile);
+  fseek(pfile,0,SEEK_SET);
+  char buffer[size+1];
 
   fgets(buffer,sizeof(buffer),pfile);
 

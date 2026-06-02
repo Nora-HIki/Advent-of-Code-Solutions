@@ -1,4 +1,3 @@
-// importing the required libraries
 #include <stdio.h>
 #include <string.h>
 #include <openssl/evp.h>
